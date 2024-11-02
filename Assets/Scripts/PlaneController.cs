@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlaneController : MonoBehaviour
 {
-    public float speed = 10f;            // Speed of the plane
+    public float speed = 50f;            // Speed of the plane
     public float rotationSpeed = 50f;    // Speed of rotation
-    public float liftSpeed = 5f;         // Speed for moving up and down
+    public float liftSpeed = 50f;         // Speed for moving up and down
 
     void Update()
     {
