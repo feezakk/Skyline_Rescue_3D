@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,3 +18,24 @@ public class CameraFollow : MonoBehaviour
         transform.LookAt(plane.position + Vector3.up * 2);
     }
 }
+/*
+using UnityEngine;
+
+public class FollowPlane : MonoBehaviour
+{
+    public Transform plane; // Drag your Plane GameObject here in the Inspector
+    public Vector3 offset = new Vector3(0, 5, -10); // Adjust the offset to position the camera relative to the plane
+
+    private void LateUpdate()
+    {
+        if (plane != null)
+        {
+            // Set the camera position to be relative to the plane's position and rotation
+            transform.position = plane.position + offset;
+
+            // Set the camera rotation to match the plane's rotation
+            transform.rotation = plane.rotation;
+        }
+    }
+}
+*/
